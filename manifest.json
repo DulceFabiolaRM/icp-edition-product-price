@@ -1,7 +1,7 @@
 {
   "vendor": "modeloramanow",
   "name": "product-price",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "title": "ABI Product Price",
   "description": "Components used to show everything price related in the context of the product",
   "builders": {
