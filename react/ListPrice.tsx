@@ -102,8 +102,8 @@ function ListPrice({
     unitValue = sizeItemsValue.replace(/\d+/g, '')
 
     if (sizeValue && unitMeasure && sellingPriceValue) {
-      
-      pricePerUnit = (sellingPriceValue / (sizeValue*unitMeasure)).toFixed(2);
+
+      pricePerUnit = (sellingPriceValue / (sizeValue * unitMeasure)).toFixed(2);
 
       //Replace point by comma COL
       if (isCoCountry) {
@@ -174,8 +174,8 @@ function ListPrice({
 
         }}
       />
+      {isCoCountry && <span key="unitPrice" className={handles.productPricePerUnit} >{typeof pricePerUnit !== 'undefined' ? `($${pricePerUnit}/${unitValue})` : ''}</span>}
 
-      <span key="unitPrice"className={handles.productPricePerUnit} >{typeof pricePerUnit !== 'undefined' ? `($${pricePerUnit}/${unitValue})` : ''}</span>
     </span>
   )
 }
